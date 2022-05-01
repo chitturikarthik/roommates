@@ -1,0 +1,318 @@
+<html>
+<head>
+    <title>RoomMates</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    font-family:'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(73, 70, 70);
+}
+.card {
+    width: 300px;
+    height: auto;
+    background: #312e2e;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate( -50%, -50%);
+    overflow: hidden;
+    cursor: hand;
+}
+.card:hover {
+    box-shadow: 3px 5px 20px rgb(183, 180, 180);
+    transition: 1s;
+}
+
+.card1 {
+    width: 300px;
+    height: auto;
+    background: #312e2e;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate( -50%, -50%);
+    overflow: hidden;
+    cursor: hand;
+}
+.card1:hover {
+    box-shadow: 3px 5px 20px rgb(183, 180, 180);
+    transition: 1s;
+}
+
+.card2 {
+    width: 300px;
+    height: auto;
+    background: #312e2e;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate( -50%, -50%);
+    overflow: hidden;
+    cursor: hand;
+}
+.card2:hover {
+    box-shadow: 3px 5px 20px rgb(183, 180, 180);
+    transition: 1s;
+}
+
+.card3 {
+    width: 300px;
+    height: auto;
+    background: #312e2e;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate( -50%, -50%);
+    overflow: hidden;
+    cursor: hand;
+}
+.card3:hover {
+    box-shadow: 3px 5px 20px rgb(183, 180, 180);
+    transition: 1s;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    
+    object-fit: cover;
+}
+div h1 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 24px;
+    color:rgb(252, 249, 249)
+}
+div h1 span {
+    font-size: 14px;
+    color: rgb(212, 210, 207);
+    letter-spacing: 2px;
+}
+div ul {
+    list-style: none;
+}
+ div ul li {
+    display: inline-block;
+    margin: 20px 10px;
+}
+div ul li a {
+    color: #e1ab08;
+    font-size: 20px ;
+    transition: 0.2s;
+}
+ div ul li a:hover {
+    color: #333;
+    transition: 0.5s;
+}
+div .btn {
+    text-decoration: none;
+    color: rgb(156, 94, 94);
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 10px;
+    margin-top: 15px;
+    display: inline-block;
+    transition: 1s;
+    border: 1px solid rgb(82, 80, 80);
+    
+}
+.card div .btn:hover {
+    border-color: #0dfe05;
+    box-shadow: 1px 1px 10px hsl(126, 99%, 51%);
+    
+}
+.card:before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: #73f594;
+    bottom: 0;
+    right: -10px;
+    z-index: -1;
+    border-top-left-radius: 100px;
+}
+.card:hover:before {
+    transform: scale(10);
+    transition-duration: 1s;   
+}
+
+.card1 div .btn:hover {
+    border-color: #0dfe05;
+    box-shadow: 1px 1px 10px hsl(126, 99%, 51%);
+    
+}
+.card1:before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: #73f594;
+    bottom: 0;
+    right: -10px;
+    z-index: -1;
+    border-top-left-radius: 100px;
+}
+.card1:hover:before {
+    transform: scale(10);
+    transition-duration: 1s;
+    
+}
+
+
+.card2 div .btn:hover {
+    border-color: #0dfe05;
+    box-shadow: 1px 1px 10px hsl(126, 99%, 51%);
+    
+}
+.card2:before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: #73f594;
+    bottom: 0;
+    right: -10px;
+    z-index: -1;
+    border-top-left-radius: 100px;
+}
+.card2:hover:before {
+    transform: scale(10);
+    transition-duration: 1s;
+    
+}
+
+.card3 div .btn:hover {
+    border-color: #0dfe05;
+    box-shadow: 1px 1px 10px hsl(126, 99%, 51%);
+    
+}
+.card3:before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: #73f594;
+    bottom: 0;
+    right: -10px;
+    z-index: -1;
+    border-top-left-radius: 100px;
+}
+.card3:hover:before {
+    transform: scale(10);
+    transition-duration: 1s;
+    
+}
+</style>
+</head>
+<body>
+<div class="card">
+    <div>
+        <img src="siva.jpeg">
+        <h1>Siva mani
+            <br><span>Engineering Student</span>
+        </h1>
+        <p align="justify" style="color:rgb(109, 108, 109); font-weight: 600px;">SivaMani Vanapalli,born on Dec9 in the year 2004.
+          Native place is Penumarru.Present, pursuing his B.Tech degree in SRKR colllege in CSD Branch.
+        </p>
+        <ul>
+            <li><a href="" target="new"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="" target="new"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/mr.zero____0/" target="new"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="" target="new"><i class="fas fa-at"></i></a></li>
+        </ul>
+        <a class="btn" href="">Roomie No.2!</a>
+    </div>
+</div>
+
+<div class="card1">
+    <div>
+        <img src="puneeth.jpeg">
+        <h1>puneeth
+            <br><span>Engineering Student</span>
+        </h1>
+        <p align="justify" style="color:rgb(109, 108, 109); font-weight: 600px;">Puneeth Veeravalli,born on May 22 in the year 2002.
+          Native place is Sirgarapalli.Present, pursuing his B.Tech degree in SRKR
+          colllege in CSD Branch.
+        </p>
+        <ul>
+            <li><a href="" target="new"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="" target="new"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/puneethveeravalli/" target="new"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="" target="new"><i class="fas fa-at"></i></a></li>
+        </ul>
+        <a class="btn" href="">Roomie No.1!</a>
+    </div>
+</div>
+
+<div class="card2">
+    <div>
+        <img src="chcanva.png">
+        <h1>Karthik
+            <br><span>Engineering Student</span>
+        </h1>
+        <p align="justify" style="color:rgb(109, 108, 109); font-weight: 600px;">Chitturi Karthik, born on August 22 in the year 2003 in Penugonda.
+          Native place is Palakol.Present, pursuing his B.Tech degree in SRKR
+          colllege in CSD Branch.
+        </p>
+        <ul>
+            <li><a href="" target="new"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="" target="new"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/the_karthik_chitturi/" target="new"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="" target="new"><i class="fas fa-at"></i></a></li>
+        </ul>
+        <a class="btn" href="">Roomie No.3!</a>
+    </div>
+</div>
+
+<div class="card3">
+    <div>
+        <img src="pramod.jpeg">
+        <h1>pramod
+            <br><span>Engineering Student</span>
+        </h1>
+        <p align="justify" style="color:rgb(109, 108, 109); font-weight: 600px;">Pramod Kumar Bolla, born on August 13 in the year 2002.
+          Native place is Venkatayapalem.Present,pursuing his B.Tech degree in SRKR
+          colllege in ECE Branch.
+        </p>
+        <ul>
+            <li><a href="" target="new"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="" target="new"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/pramodkumarbolla/" target="new"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="" target="new"><i class="fas fa-at"></i></a></li>
+        </ul>
+        <a class="btn" href="">Roomie No.4!</a>
+    </div>
+</div>
+
+</body>
+</html>
